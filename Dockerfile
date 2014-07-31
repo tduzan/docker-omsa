@@ -1,6 +1,6 @@
 FROM centos
 
-RUN yum -y install perl openssl098e
+RUN yum -y install perl openssl098e wget
 RUN wget -q -O - http://linux.dell.com/repo/hardware/Linux_Repository_14.04.00/bootstrap.cgi | bash
 
 RUN yum -y install srvadmin-all
